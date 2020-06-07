@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Accordion layoutX="20.0" layoutY="43.0" />
+      <Button fx:id="add" disable="true" layoutX="14.0" layoutY="106.0" mnemonicParsing="false" onAction="#bntAdd" text="Добавить" />
+      <Button fx:id="check" disable="true" layoutX="10.0" layoutY="186.0" mnemonicParsing="false" onAction="#checkSteamId" text="Проверить" />
+      <Button fx:id="allButton" disable="true" layoutX="278.0" layoutY="423.0" mnemonicParsing="false" onAction="#Enter" prefHeight="25.0" prefWidth="88.0" text="Вывести все" />
+      <Label fx:id="allArea" alignment="TOP_LEFT" layoutX="375.0" layoutY="9.0" prefHeight="449.0" prefWidth="302.0" style="-fx-background-color: #CDCDCD;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="steamid" disable="true" layoutX="10.0" layoutY="49.0" prefHeight="37.0" prefWidth="181.0" promptText="Введите steamID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="date" disable="true" layoutX="206.0" layoutY="49.0" prefHeight="37.0" prefWidth="39.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LabelDate" alignment="TOP_LEFT" layoutX="211.0" layoutY="22.0" prefHeight="19.0" prefWidth="33.0" text="День">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelMounth" alignment="TOP_LEFT" layoutX="257.0" layoutY="22.0" prefHeight="20.0" prefWidth="45.0" text="Месяц">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mounth" disable="true" layoutX="259.0" layoutY="49.0" prefHeight="37.0" prefWidth="39.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="year" disable="true" layoutX="312.0" layoutY="49.0" prefHeight="37.0" prefWidth="39.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LabelYear" alignment="TOP_LEFT" layoutX="322.0" layoutY="22.0" prefHeight="20.0" prefWidth="33.0" text="Год">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="vipTake" alignment="TOP_LEFT" layoutX="145.0" layoutY="161.0" prefHeight="25.0" prefWidth="147.0" text="Дата выдачи vip">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="vipDate" alignment="TOP_LEFT" layoutX="145.0" layoutY="189.0" prefHeight="20.0" prefWidth="181.0" text="0.0.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="save" disable="true" layoutX="295.0" layoutY="106.0" mnemonicParsing="false" onAction="#saveData" text="Сохранить" />
+      <Button fx:id="upDate" layoutX="20.0" layoutY="423.0" mnemonicParsing="false" onAction="#upDate" prefHeight="25.0" prefWidth="88.0" text="Обновить" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
